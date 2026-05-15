@@ -1,12 +1,78 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Лабораторная работа</title>
-</head>
-<body>
-    <h1>Привет, GitHub!</h1>
-    <p>Моя первая лабораторная работа с Git и GitHub.</p>
-    <p>Дополнительный текст</p>
-</body>
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Лабораторная работа</title> 
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+    <header> 
+        <h1>Snickers</h1> 
+    </header> 
+    <img src="snickers.jpg" width="500" alt="Snickers"> 
+    <nav> 
+        <a href="#">Шоколад</a> 
+        <a href="#">Карамель</a> 
+        <a href="#">Арахис</a> 
+    </nav> 
+    <main> 
+        <section> 
+            <h2>Динамическая форма</h2> 
+            <form id="dynamicForm"> 
+                <label for="name">Введите ваше имя:</label> 
+                <input type="text" id="name" required> 
+                <br><br> 
+                <label for="message">Введите сообщение:</label> 
+                <textarea id="message" rows="3" required></textarea> 
+                <br><br> 
+                <button type="submit">Отправить</button> 
+            </form> 
+            <h3>Результат:</h3> 
+            <div id="output"></div> 
+        </section> 
+        <section> 
+            <h2>Лозунг</h2> 
+            <p>Не тормози — сникерсни!</p> 
+        </section> 
+        <section> 
+            <h2>О шоколаде</h2> 
+            <ul> 
+                <li>Молочный</li> 
+                <li>Черный</li> 
+            </ul> 
+        </section> 
+        <section> 
+            <h2>Интерактивность</h2> 
+            <button id="greetBtn">Нажми меня</button> 
+            <p id="greetText"></p> 
+        </section> 
+        <p id="hoverText">Наведи на меня мышкой!</p> 
+        <section> 
+            <button id="toggleBtn">Показать / Скрыть боковую информацию</button> 
+            <aside id="sidebar" style="display:none; border:1px solid #ccc; padding:10px; margin-top:10px;"> 
+                <p>Это боковая колонка с дополнительной информацией о шоколаде!</p> 
+            </aside> 
+        </section> 
+    </main> 
+    <aside> 
+        <p>Вкусно и точка.</p> 
+    </aside> 
+    <footer> 
+        <p>© 2026 Лабораторная работа</p> 
+    </footer> 
+    
+    <section> 
+        <h2>Объект JavaScript</h2> 
+        <p id="userInfo"></p> 
+    </section> 
+    
+    <!-- Блок для замыкания (счетчика) --> 
+    <section> 
+        <h2>Замыкание: счётчик</h2> 
+        <button id="clickBtn">Нажми меня</button> 
+        <p>Количество нажатий: <span id="count">0</span></p> 
+    </section> 
+    
+    <script src="script.js"></script> 
+</body> 
 </html>
